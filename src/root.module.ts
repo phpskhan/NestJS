@@ -5,11 +5,12 @@ import { UsersModule } from './users.module';
 import { OrdersModule } from './orders.module';
 import { ChatModule } from './chat.module';
 import { BookController } from './app.controller';
+import { BookService } from './book.servis';
 
 @Module({
-  imports: [MainModule , UsersModule , OrdersModule, ChatModule],
+  imports: [],
   controllers: [BookController],
-  providers: [],
+  providers: [BookService],
 })
 export class RootModule {
   constructor() {
